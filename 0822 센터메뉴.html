@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>센터메뉴</title>
+  <style>
+    
+
+    body{
+      margin: 0;
+    }
+
+    #container{
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      background: dodgerblue;
+      position: relative;
+    }
+
+    #left{
+      float: left;
+      box-sizing: border-box;
+    }
+
+    #left > a{
+      float: left;
+      padding: 0 10px 0 10px;
+      display: block;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+      background: #eee;
+      display: block;
+    }
+
+    a:hover{
+      background: red;
+    }
+
+    #right{
+      float: right;
+    }
+
+    #right > a{
+      float: left;
+      padding: 0 10px 0 10px;
+      display: block;
+    }
+
+    .center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: yellow;
+      padding: 0 10px 0 10px;
+    }
+
+    .center:hover{
+      background: red;
+      color: #fff;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="left">
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="center">Home</div>
+
+    <div id="right">
+      <a href="#">Search</a>
+      <a href="#">About</a>
+    </div>
+
+  </div>
+</body>
+</html>
